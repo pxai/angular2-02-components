@@ -1,4 +1,4 @@
-System.register(['angular2/core', './mytitle.component', './myexternal.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,40 +10,35 @@ System.register(['angular2/core', './mytitle.component', './myexternal.component
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, mytitle_component_1, myexternal_component_1;
-    var AppComponent;
+    var core_1;
+    var MyExternalComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (mytitle_component_1_1) {
-                mytitle_component_1 = mytitle_component_1_1;
-            },
-            function (myexternal_component_1_1) {
-                myexternal_component_1 = myexternal_component_1_1;
             }],
         execute: function() {
             /**
-             * Shows how to use different components
-             * External my-title
-             * External with templateUrl
+             * MyExternal
+             * This is reusable component that loads content from
+             * another file
              */
-            AppComponent = (function () {
-                function AppComponent() {
+            MyExternalComponent = (function () {
+                function MyExternalComponent() {
+                    this.title = 'Overrides other titles';
+                    this.subtitle = 'This is in a external template';
                 }
-                AppComponent = __decorate([
+                MyExternalComponent = __decorate([
                     core_1.Component({
-                        selector: 'components-app',
-                        directives: [mytitle_component_1.MyTitleComponent, myexternal_component_1.MyExternalComponent],
-                        template: "<div>\n                <my-title></my-title>\n                <my-external></my-external>\n               </div>"
+                        selector: 'my-external',
+                        templateUrl: 'app/external.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], MyExternalComponent);
+                return MyExternalComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("MyExternalComponent", MyExternalComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=myexternal.component.js.map

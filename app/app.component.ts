@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
-import {MyTitleComponent} from './mytitle.component'
+import {MyTitleComponent} from './mytitle.component';
+import {MyExternalComponent} from './myexternal.component';
 
 /**
  * Shows how to use different components
@@ -8,10 +9,11 @@ import {MyTitleComponent} from './mytitle.component'
  */
 @Component({
     selector: 'components-app',
-    template: `<section>
+    directives: [MyTitleComponent,MyExternalComponent],
+    template: `<div>
                 <my-title></my-title>
-               </section>
-            `
+                <my-external></my-external>
+               </div>`
 })
 export class AppComponent {
 

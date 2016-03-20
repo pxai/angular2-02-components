@@ -29,7 +29,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 MyTitleComponent = __decorate([
                     core_1.Component({
                         selector: 'my-title',
-                        template: '<header><h1>{{title}}</h1></header>'
+                        template: "<header><h1>{{title}}</h1></header>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyTitleComponent);
