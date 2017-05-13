@@ -1,12 +1,12 @@
-# Angular4 00-hello
+# Angular4 02-Components
 ## What's this
 Simple example of Angular4 app set up for a console-based environment
-In this case to show the simplest case possible
+In this case to show the use of components
 
 ## Install
 Clone the repository
 ```
-git clone https://github.com/pxai/angular2-00-hello.git
+git clone https://github.com/pxai/angular2-02-components.git
 ```
 
 You may need to install node modules
