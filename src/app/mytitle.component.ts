@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 /**
  * MyTitle
@@ -8,6 +8,6 @@ import {Component} from 'angular2/core';
     selector: 'my-title',
     template: `<header><h1>{{title}}</h1></header>`
 })
-export class MyTitleComponent { 
+export class MyTitleComponent {
     private title : string = 'This is My Title component';
 }

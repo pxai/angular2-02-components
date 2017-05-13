@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 /**
  * MyExternal
@@ -9,7 +9,7 @@ import {Component} from 'angular2/core';
     selector: 'my-external',
     templateUrl: 'app/external.html'
 })
-export class MyExternalComponent { 
+export class MyExternalComponent {
     private title : string = 'Overrides other titles';
     private subtitle : string = 'This is in a external template';
 }
