@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {MyTitleComponent} from './mytitle.component';
-import {MyExternalComponent} from './myexternal.component';
+
 
 /**
  * Shows how to use different components
